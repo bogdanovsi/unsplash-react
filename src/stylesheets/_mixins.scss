@@ -1,0 +1,13 @@
+@mixin ease($duration: 0.3s) {
+    @include css3-prefix(transition,
+        all $duration cubic-bezier(0.23, 1, 0.32, 1));
+}
+
+@mixin css3-prefix($property, $value) {
+    -webkit-#{$property}: #{$value};
+    -khtml-#{$property} : #{$value};
+    -moz-#{$property}   : #{$value};
+    -ms-#{$property}    : #{$value};
+    -o-#{$property}     : #{$value};
+    #{$property}        : #{$value};
+}

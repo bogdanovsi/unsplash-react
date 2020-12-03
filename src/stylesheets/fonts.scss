@@ -1,0 +1,39 @@
+$default-myraid-pro: 'Myriad Pro';
+
+@font-face {
+    font-family: $default-myraid-pro;
+    font-style: normal;
+    font-weight: normal;
+    src        : local('Myriad Pro light'), url(../fonts/myriadpro-light.otf) format('opentype');
+}
+
+@font-face {
+    font-family: $default-myraid-pro;
+    font-style: normal;
+    font-weight: bold;
+    src        : local('Myriad Pro Bold'), url(../fonts/MyriadPro-Bold.otf) format('opentype');
+}
+
+@mixin myraid-pro {
+    font-family: $default-myraid-pro, sans-serif;
+}
+
+@mixin font-ligth {
+    font-weight: 200;
+}
+.font-ligth  {
+    @include font-ligth;
+}
+@mixin font-normal {
+    font-weight: 400;
+}
+.font-normal {
+    @include font-normal;
+}
+
+@mixin font-bold {
+    font-weight: 700;
+}
+.font-bold {
+    @include font-bold;
+}

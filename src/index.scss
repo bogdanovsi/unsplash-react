@@ -1,0 +1,36 @@
+@import-normalize;
+
+@import 'stylesheets/_base.scss';
+@import 'stylesheets/_mixins.scss';
+@import 'stylesheets/fonts.scss';
+
+:root {
+  font-size: 12px;
+}
+
+body {
+  margin: 0;
+  @include myraid-pro;
+  font-size: 1rem;
+  line-height: 1.4;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.m0 {
+  margin: 0;
+}
+
+.tt-upper {
+  text-transform: uppercase;
+}
+
+.separator {
+  border-bottom: 1px solid #4f4f4f;
+  width: 100%;
+}
